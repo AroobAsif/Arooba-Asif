@@ -13,7 +13,6 @@ int itemCount = 0;
 int cart[10];
 int cartItemCount = 0;
 
-// ANSI escape codes for color
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -202,7 +201,7 @@ int main() {
                             cout << RED << "Invalid Input" << RESET << endl;
                             break;
                     }
-                } while (option != 5); // Loop will return to main menu after option 5
+                } while (option != 5); 
             } else {
                 cout << RED << "Invalid Credentials" << RESET << endl;
             }
@@ -239,13 +238,13 @@ int main() {
                             cout << RED << "Invalid Input" << RESET << endl;
                             break;
                     }
-                } while (option != 3); // Loop will return to main menu after option 3
+                } while (option != 3); 
             } else {
                 cout << RED << "Invalid credentials" << RESET << endl;
             }
         }
 
-    } while (choice != 3); // This outer loop will keep the program running until user chooses to exit.
+    } while (choice != 3); 
 
     return 0;
 }
